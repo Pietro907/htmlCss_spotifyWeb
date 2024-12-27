@@ -1,32 +1,65 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 /* #region main */
 
-main{
-    width: 100%;
-    height: calc(100vh - 90px);
+main {
+  width: 100%;
+  height: calc(100vh - 90px);
 }
 
 /* #region sidebar */
 
-.sidebar{
-    width: 220px;
-    height: 100%;
-    float: left;
+.sidebar {
+  width: 220px;
+  height: 100%;
+  float: left;
 }
-
+.col-4 {
+  width: 100%;
+  height: calc(100% / 3);
+  background: var(--bg--dark-dark);
+}
+.sidebar > .col-4 > .card {
+  padding: 0.5rem 0;
+  margin: 0 0 0 20px;
+  & a {
+    text-decoration: none;
+    color: black;
+    padding: 0 0 0 0.5rem;
+  }
+  & h3 {
+    font-size: 20px;
+    text-align: center;
+    color: var(--text-primary);
+  }
+  & span {
+    width: 30px;
+    height: 25px;
+    font-size: 20px;
+    color: var(--text-primary);
+  }
+  & .fa-plus{
+    padding: 1.5rem;
+    background: var(--text-primary);
+    color: var(--bg--dark-dark);
+  }
+}
+.play_list{
+    list-style: none;
+    overflow-y: scroll;
+}
 /* #endregion sidebar */
 
 /* #region side_content */
 
-.side_content{
-    width: calc(100% - 220px);
-    height: 100%;
-    float: right;
+.side_content {
+  width: calc(100% - 220px);
+  height: 100%;
+  float: right;
 }
 
 /* #endregion side_content */
@@ -35,25 +68,53 @@ main{
 
 /* #region footer */
 
-footer{
-    width: 100%;
-    height: 90px;
+footer {
+  width: 100%;
+  height: 90px;
 }
 
 /* #endregion footer */
 
+/* #region utilities */
+
+.d-flex {
+  display: flex;
+}
+.flex_center {
+  justify-content: center;
+  align-items: center;
+}
+.flex_start {
+  justify-content: center;
+  align-items: start;
+}
+.flex_col {
+  flex-direction: column;
+}
+
+/* #endregion utilities */
+
 /* #region debug */
 
-.debug_r{
-    border: 1px solid red;
-    background: yellow;
+.debug_r {
+  border: 1px solid red;
+  background: yellow;
 }
-.debug_b{
-    border: 1px solid blue;
-    background: lightskyblue;
-}.debug_g{
-    border: 1px solid green;
-    background: gray;
+.debug_b {
+  border: 1px solid blue;
+  background: lightskyblue;
+}
+.debug_g {
+  border: 1px solid green;
+  background: gray;
 }
 
 /* #endregion debug */
+
+/* #region color */
+:root {
+  --text-primary: #ebe6e6;
+  --bg--dark-dark: #000000;
+}
+
+/* #endregion color */

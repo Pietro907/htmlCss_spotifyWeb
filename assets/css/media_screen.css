@@ -1,60 +1,78 @@
 @media screen and (min-width: 1920px) {
-    /* #region sidebar */
-    
-    .sidebar{
-        width: 330px;
+  /* #region sidebar */
+
+  .sidebar {
+    width: 330px;
+  }
+  .side_content {
+    width: calc(100% - 330px);
+  }
+  .sidebar > .col-4 > .card {
+    margin: 0 0 0 40px;
+    & span,
+    h3 {
+      font-size: 30px;
     }
-    .side_content{
-        width: calc(100% - 330px);
+    & h3{
+      padding: 0 0 0 1rem;
     }
-    
-    /* #endregion sidebar */
+  }
+
+  /* #endregion sidebar */
 }
 @media screen and (max-width: 1024px) {
-    /* #region sidebar */
-    
-    .sidebar{
-        width: 165px;
+  /* #region sidebar */
+
+  .sidebar {
+    width: 165px;
+  }
+  .side_content {
+    width: calc(100% - 165px);
+  }
+  .sidebar > .col-4 > .card {
+    padding: 0.5rem 0;
+    & h3 {
+      padding: 0 0 0 0.5rem;
     }
-    .side_content{
-        width: calc(100% - 165px);
+    & i {
+      font-size: 15px;
     }
-    
-    /* #endregion sidebar */
+  }
+  /* #endregion sidebar */
 }
 @media screen and (max-width: 768px) {
-    /* #region sidebar */
-    
-    .sidebar{
-        width: 110px;
-    }
-    .side_content{
-        width: calc(100% - 110px);
-    }
-    
-    /* #endregion sidebar */
+  /* #region sidebar */
+
+  .sidebar {
+    width: 110px;
+  }
+  .side_content {
+    width: calc(100% - 110px);
+  }
+
+  /* #endregion sidebar */
 }
 @media screen and (max-width: 425px) {
-    /* #region sidebar */
-    
-    .sidebar{
-        width: 55px;
-    }
-    .side_content{
-        width: calc(100% - 55px);
-    }
-    
-    /* #endregion sidebar */
+  /* #region sidebar */
+
+  .sidebar {
+    width: 55px;
+  }
+  .side_content {
+    width: calc(100% - 55px);
+  }
+
+  /* #endregion sidebar */
 }
 @media screen and (max-width: 320px) {
-    /* #region sidebar */
+  /* #region sidebar */
 
-        .sidebar{
-            width: 35px;
-        }
-        .side_content{
-            width: calc(100% - 35px);
-        }
+  .sidebar {
+    width: 35px;
+  }
+  .side_content {
+    width: calc(100% - 35px);
+  }
 
-    /* #endregion sidebar */
+  /* #endregion sidebar */
 }

@@ -1,17 +1,84 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Spotify Web</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="./assets/css/style.css">
     <link rel="stylesheet" href="./assets/css/media_screen.css">
 </head>
+
 <body>
     <main>
-        <div class="sidebar debug_r"></div>
+        <!-- colonna sx -->
+        <div class="sidebar d-flex flex_center flex_col">
+
+            <!-- voci menu -->
+            <div class="col-4 d-flex flex_start flex_col">
+                <div class="card d-flex flex_center">
+                    <span class="fa-solid fa-home d-flex flex_center"></span>
+                    <a href="/">
+                        <h3>Home</h3>
+                    </a>
+                </div>
+                <div class="card d-flex flex_center">
+                    <span class="fa-solid fa-magnifying-glass d-flex flex_center"></span>
+                    <a href="/">
+                        <h3>Cerca</h3>
+                    </a>
+                </div>
+                <div class="card d-flex flex_center">
+                    <span class="fa-solid fa-lines-leaning d-flex flex_center"></span>
+                    <a href="/">
+                        <h3>La tua libreria</h3>
+                    </a>
+                </div>
+            </div>
+
+            <div class="col-4 d-flex flex_start flex_col debug_r">
+                <div class="card d-flex flex_col flex_startr">
+                    <h2>Playlist</h2>
+                    <div class="create_playlist d-flex ">
+                        <span class="fa-solid fa-plus d-flex flex_center"></span>
+                        <h3>Crea Playlist</h3>
+                    </div>
+                    <ul class="play_list">
+                        <li>Nome Playlist</li>
+                        <li>Nome Playlist</li>
+                        <li>Nome Playlist</li>
+                        <li>Nome Playlist</li>
+                        <li>Nome Playlist</li>
+                        <li>Nome Playlist</li>
+                        <li>Nome Playlist</li>
+                        <li>Nome Playlist</li>
+                        <li>Nome Playlist</li>
+                        <li>Nome Playlist</li>
+                        <li>Nome Playlist</li>
+                        <li>Nome Playlist</li>
+                        <li>Nome Playlist</li>
+                        <li>Nome Playlist</li>
+                        <li>Nome Playlist</li>
+                        <li>Nome Playlist</li>
+                        <li>Nome Playlist</li>
+                    </ul>
+                </div>
+                <div class="card debug_b"></div>
+            </div>
+
+            <div class="col-4 debug_r">
+                <div class="card"></div>
+            </div>
+
+        </div>
+
+        <!-- colonna dx -->
         <div class="side_content debug_b"></div>
     </main>
     <footer class="debug_g"></footer>
 </body>
+
 </html>
